@@ -15,11 +15,7 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-image: linear-gradient(
-        115deg,
-        rgba(36,57,73, 0.1),
-        rgba(81,127,164, 0.2)),
-      url(/images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
