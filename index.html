@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="header" class="header-text back-color">
+        <h1>Survey Form</h1>
+    </header>
+
+    <main id="main" class="back-color">
+        <h1 id="title">Feedback</h1>
+        <p id="description">Here is you can describe a survey form</p>
+
+        <form action="last-page.html">
+            <label for="name-label">Name:</label> <br>
+            <input type="text" name="name" id="name-label" placeholder="Enter your name" required>
+            <br>
+            <label for="surname-label">Surname:</label> <br>
+            <input type="text" name="surname" id="surname-label" placeholder="Enter your surname" required>
+            <br>
+            <label for="email-label">Email:</label> <br>
+            <input type="email" name="email" id="email-label" placeholder="Enter your email" required>
+            <br>
+            <label for="age">Age:</label> <br>
+            <input type="number" name="age" id="age" placeholder="Your age (optional)" min="16" max="80">
+            <br>
+            <label for="recomendation">Will you recommend this form?</label> <br>
+            <select id="dropdown" name="recomendation" required>
+                <option disabled selected value>Select your recomendation</option>
+                <option value="yes">Yes</option>
+                <option value="why-not">Why not</option>
+                <option value="maybe">Maybe</option>
+                <option value="better-no">Better no</option>
+                <option value="never">Never</option>
+              </select>
+              <br>
+              <label>Do you think that's enough for form?</label>
+              <div>
+                <label for="yes">
+                    <input type="radio" name="radio" value="yes" id="yes" checked>
+                        Yes
+                </label> <br>
+                <label for="maybe">
+                    <input type="radio" name="radio" value="maybe" id="maybe">
+                        Maybe
+                </label> <br>
+                <label for="no">
+                    <input type="radio" name="radio" value="no" id="no">
+                        No
+                </label> <br>
+            </div>
+
+            <label>What would you like to see next time?</label> <br>
+            <label>
+                <input type="checkbox" name="prefer" value="design">
+                Better design
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="content">
+                More content
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="interesting">
+                Interesting ideas
+            </label>
+            <br>
+            <label for="more">Some more advices?</label> <br>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="Here you can describe your opinoion."></textarea> <br>
+            <button type="submit">Submit form and see what happens</button>
+        </form>
+    </main>
+</body>
+</html>
